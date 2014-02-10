@@ -7,9 +7,9 @@ class SalesOrderWorkflow(xwf_models.Workflow):
     States of a sales order based transaction
     '''
     states = (
-        ('init', _(u"Sales order initialized")),
-        ('commitment', _(u"Sales order commitment reciprocity established")),
-        ('event', _(u"Sales exchange duality achieved")),
+        ('init', _(u'Sales order initialized')),
+        ('commitment', _(u'Sales order commitment reciprocity established')),
+        ('event', _(u'Sales exchange duality achieved')),
     )
 
     transitions = (
