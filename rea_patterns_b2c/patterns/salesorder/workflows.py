@@ -15,6 +15,7 @@ class SalesOrderWorkflow(xwf_models.Workflow):
     transitions = (
         ('customer_committed', ('init'), 'commitment'),
         ('payment_recieved', 'commitment', 'event'),
+        # XXX add order / fulfilment
     )
 
     initial_state = 'init'
